@@ -1,0 +1,118 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fadl Test</title>
+    <link rel="stylesheet" href="css/ADD_student.css">
+</head>
+
+<body>
+    <nav>
+        <img src="images/logoo.png" height="60px" width="70px">
+        <label class="websiteName">
+            FCAI Students Affairs
+        </label>
+        <ul class="links">
+            <li><a class="active" href="Home  page.html">Home</a></li>
+            <li><a href="All_Student.html">All Students</a></li>
+            <li><a href="Search_Active.html">Active Students</a></li>
+            <li><a href="ADD_student.html">Add new student</a></li>
+            <li><a href="Update_student.html">Update student data</a></li>
+            <li><a href="student assignment.html">Student Department Assignment</a></li>
+        </ul>
+    </nav>
+    </nav>
+
+    <div class="form-container">
+        <form>
+            <div class="form-row">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-row">
+                <label for="id">ID:</label>
+                <input type="text" id="id" name="id" placeholder="Enter your ID" required>
+            </div>
+
+            <div class="form-row">
+                <label for="date">Birth Date</label>
+                <input type="date" id="date" name="date" required>  
+            </div>
+
+            <div class="form-row">
+                <label for="gpa">GPA:</label>
+                <input type="number" id="gpa" name="gpa" placeholder="Enter your GPA" min="0" max="4" step="0.01"
+                    required>
+            </div>
+
+            <div class="form-row">
+                <label for="level">Level:</label>
+                <input type="number" id="level" name="level" placeholder="Enter your level" required>
+            </div>
+
+
+            <div class="form-row">
+            <label for="department"><b>Department:</b></label>
+            
+            <select name="dept" id="department" required>
+            <option value="General">General</option>
+            <option value="Computer Science">Computer Science</option>
+            <option value="Decision Support">Decision Support</option>
+            <option value="Information Systems">Information Systems</option>
+            <option value="Information Technology">Information Technology</option>
+            <option value="Artificial Intelligence">Artificial Intelligence</option>
+            <option value="Data Science">Data Science</option>
+            <option value="Networks and Cyber Security">Networks and Cyber Security</option>
+            <option value="Software Engineering">Software Engineering</option>
+            <option value="Computing and Bioinformatics">Computing and Bioinformatics</option>
+            <option value="Networks Technology">Networks Technology</option>
+
+            </select>
+            </div>
+            <div class="form-row">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-row">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" 
+                    required>
+            </div>
+
+            <div class="form-row">
+                <label for="gender">Gender:</label>
+                <div class="status-choices">
+                    <input type="radio" id="male" name="gender" value="male" checked>
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">FeMale</label>
+                </div>
+            </div>
+
+
+            <div class="form-row">
+                <label for="status">Status:</label>
+                <div class="status-choices">
+                    <input type="radio" id="active" name="status" value="Active" checked>
+                    <label for="active">Active</label>
+
+                    <input type="radio" id="inactive" name="status" value="Inactive">
+                    <label for="inactive">Inactive</label>
+                </div>
+            </div>
+
+            <div>
+                <input id = "btn" type="submit" value="Register">
+                <input type="reset">
+            </div>
+        </form>
+    </div>
+    <script src="js/test.js"></script>
+</body>
+
+</html>

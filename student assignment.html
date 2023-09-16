@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/Estyle.css">
+    <Title>
+        student's department assignment
+    </Title>
+    
+</head>
+
+<body>
+    <nav>
+        <img src="images/logoo.png" height="60px" width="70px">
+        <label class="websiteName">
+            FCAI Students Affairs
+        </label>
+        <ul class="links">
+            <li><a class="active" href="Home  page.html">Home</a></li>
+            <li><a href="All_Student.html">All Students</a></li>
+            <li><a href="Search_Active.html">Active Students</a></li>
+            <li><a href="ADD_student.html">Add new student</a></li>
+            <li><a href="Update_student.html">Update student data</a></li>
+            <li><a href="student assignment.html">Student Department Assignment</a></li>
+        </ul>
+    </nav>
+    <br> <br> <br>
+    <div class="box">
+
+    <br>
+        <form name="form" onsubmit="return validateForm()">
+        <div class = "field">
+            <label for="ID"> Student ID </label>
+            <input type="number" id="ID" class = "input" name="ID">
+        </div>
+        <div class = "field">
+            <label for="Name"> Name </label>
+            <input type="text" id="Name" class = "input" name="Name">
+        </div>
+        <div class = "field">
+            <label> Department </label>
+            <select name = "dept" id="department">
+                <option disabled selected> ---choose a department--- </option>
+                <option value="Computer Science"> Computer Science </option>
+                <option value="Decision Support"> Decision Support</option>
+                <option value="Information Systems"> Information Systems</option>
+                <option value="Information Technology"> Information Technology</option>
+                <option value="Artificial Intelligence"> Artificial Intelligence</option>
+                <option value="Data Science"> Data Science</option>
+                <option value="Networks and Cyber Security"> Networks and Cyber Security</option>
+                <option value="Software Engineering"> Software Engineering </option>
+                <option value="Computing and Bioinformatics"> Computing and Bioinformatics</option>
+                <option value="Network Technology"> Network Technology</option>
+    
+            </select>
+        </div>
+            <input class="button" type="submit" id = "submit">
+        </form>
+        <br>
+    </div>
+    <script src="js/student assignment.js"></script>
+
+</body>
+
+</html>
